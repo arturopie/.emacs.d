@@ -1,21 +1,3 @@
-(defun new-line-in-normal-mode ()
-  "make a new line without moving the cursor or leaving normal mode"
-  (interactive)
-  (evil-set-marker ?z)
-  (evil-insert-newline-below)
-  (evil-force-normal-state)
-  (evil-goto-mark ?z))
-
-;;; no worky
-(defun extract-variable ()
-  (interactive)
-  (let ((name (read-from-minibuffer "Variable name: ")))
-    (evil-change (region-beginning) (region-end))
-    (insert name)
-    (evil-open-above 1)
-    (insert (concat name " = "))
-    (evil-paste-after 1)))
-
 ;;; no worky
 (defun inline-variable ()
   (interactive)
@@ -42,10 +24,6 @@
   (interactive)
   (let ((cmd "python -mjson.tool"))
     (shell-command-on-region (region-beginning) (region-end) cmd nil t)))
-
-(defun copy-to-end-of-line ()
-  (interactive)
-  (evil-yank (point) (point-at-eol)))
 
 (defun command-t ()
   (interactive)

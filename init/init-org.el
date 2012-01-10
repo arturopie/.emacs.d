@@ -13,7 +13,6 @@
 
 
 (setq org-default-notes-file "~/notes.org")
-(define-key evil-normal-state-map (kbd ",r") 'org-capture)
 
 ; Refile targets include this file and any file contributing to the agenda - up to 5 levels deep
 (setq org-refile-targets (quote ((nil :maxlevel . 5) (org-agenda-files :maxlevel . 5))))

@@ -34,7 +34,5 @@
 
 (global-set-key (kbd "M-{") 'dim:escreen-goto-prev-screen)
 (global-set-key (kbd "M-}") 'dim:escreen-goto-next-screen)
-(define-key evil-normal-state-map ",wk" 'escreen-kill-screen)
-(define-key evil-normal-state-map ",wc" 'escreen-create-screen)
 
 (provide 'init-escreen)

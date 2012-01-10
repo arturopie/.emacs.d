@@ -84,9 +84,6 @@
                :type http
                :url "https://raw.github.com/mbriggs/rails-test-toggler/master/rails-test-toggler.el"
                :features rails-test-toggler)
-        (:name evil-surround
-               :type http
-               :url "https://raw.github.com/timcharper/evil-surround/master/surround.el")
         (:name escreen
                :type http
                :url "http://www.splode.com/~friedman/software/emacs-lisp/src/escreen.el")
@@ -167,8 +164,6 @@
          lua-mode
          el-expectations
          eproject
-         evil
-         evil-surround
          fuzzy-find-in-project
          magit
          my-mooz-js2-mode

@@ -23,8 +23,8 @@
 (tooltip-mode -1)
 
 (if (featurep 'ns)
-    (set-frame-font "Menlo-15")
-    (set-frame-font "Menlo-11"))
+    (set-frame-font "Inconsolata")
+    (set-frame-font "Inconsolata"))
 
 (require 'color-theme)
 (color-theme-solarized-light)
