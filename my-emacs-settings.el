@@ -2,6 +2,8 @@
 (setq auto-save-default nil)
 (setq-default tab-width 2)
 (setq-default indent-tabs-mode nil)
+;; to copy to system clipboard
+(setq x-select-enable-clipboard t)
 (setq inhibit-startup-message t)
 (setq fill-column 85)
 (setq initial-major-mode 'emacs-lisp-mode)
