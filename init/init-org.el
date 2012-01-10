@@ -1,4 +1,5 @@
 (add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
+(require 'org)
 
 ;; Various preferences
 (setq org-log-done t
