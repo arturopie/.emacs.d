@@ -28,8 +28,9 @@
     (set-frame-font "Inconsolata")
     (set-frame-font "Inconsolata"))
 
-(require 'color-theme)
-(color-theme-solarized-light)
+(require 'color-theme-railscasts)
+(color-theme-railscasts)
+
 (setq shell-command-switch "-ic")
 
 (add-hook 'after-change-major-mode-hook
