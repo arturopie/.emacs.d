@@ -26,7 +26,7 @@
  '(erb-face ((((class color) (min-colors 88) (background light)) (:background "#fcf4dc"))))
  '(flymake-errline ((((class color)) (:underline "#c60007"))))
  '(flymake-warnline ((((class color)) (:underline "#2075c7"))))
- '(font-lock-function-name-face ((t (:background "#52676f" :foreground "#FCF4DC" :weight bold :inverse-video t))))
+;; '(font-lock-function-name-face ((t (:background "#52676f" :foreground "#FCF4DC" :weight bold :inverse-video t))))
  '(hl-paren-face ((t (:weight bold))) t)
  '(isearch ((((class color)) (:background "#a57705" :underline "#a57705" :bold t :foreground "#fcf4dc"))))
  '(js2-error-face ((((class color) (background light)) (:foreground "#c60007"))))
