@@ -29,6 +29,8 @@
 (global-set-key "\C-x\C-k" 'kill-region)
 (global-set-key "\C-c\C-k" 'kill-region)
 
+(global-set-key "\C-f" 'command-t)
+
 (add-hook 'ruby-mode-hook
           (lambda ()
             (local-set-key (kbd "RET") 'newline-and-indent)
