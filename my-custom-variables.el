@@ -31,7 +31,7 @@
  '(isearch ((((class color)) (:background "#a57705" :underline "#a57705" :bold t :foreground "#fcf4dc"))))
  '(js2-error-face ((((class color) (background light)) (:foreground "#c60007"))))
  '(js2-external-variable-face ((t (:foreground "#bd3612"))))
- '(js2-function-param-face ((t (:foreground "#728a05"))))
+ '(js2-function-param-face ((t (:foreground "#ffd700"))))
  '(lazy-highlight ((((class color)) (:underline "#5859b7" :foreground "#5859b7" :background "#fcf4dc"))))
  '(magit-branch ((((class color)) (:background "#81908F" :foreground "#FCF4DC"))))
  '(magit-diff-add ((((class color)) (:foreground "#728a05"))))
