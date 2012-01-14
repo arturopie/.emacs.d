@@ -99,7 +99,10 @@
         (:name rhtml
                :type git
                :url "git@github.com:mbriggs/rhtml.git"
-               :features rhtml-mode)))
+               :features rhtml-mode)
+        (:name color-theme-railscasts
+               :type git
+               :url "https://github.com/olegshaldybin/color-theme-railscasts.git")))
 
 ;;; get what we can from elpa
 (require-package 'css-mode)
@@ -177,6 +180,7 @@
          solarized
          rspec-mode
          textile-mode
+         color-theme-railscasts
          rvm)
        (mapcar 'el-get-source-name el-get-sources)))
 
