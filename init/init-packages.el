@@ -105,7 +105,10 @@
                :features rhtml-mode)
         (:name color-theme-railscasts
                :type git
-               :url "https://github.com/olegshaldybin/color-theme-railscasts.git")))
+               :url "https://github.com/olegshaldybin/color-theme-railscasts.git")
+        (:name jump-char
+               :type git
+               :url "https://github.com/lewang/jump-char.git")))
 
 ;;; get what we can from elpa
 (require-package 'css-mode)
@@ -185,7 +188,8 @@
          rspec-mode
          textile-mode
          color-theme-railscasts
-         rvm)
+         rvm
+         jump-char)
        (mapcar 'el-get-source-name el-get-sources)))
 
 

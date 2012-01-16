@@ -38,6 +38,7 @@
 (require 'init-js)
 (require 'init-lua)
 (require 'init-git-blame)
+(require 'init-jump-char)
 
 (require 'my-defuns)
 (require 'my-keymaps)
