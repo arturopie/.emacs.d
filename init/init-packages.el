@@ -68,12 +68,6 @@
         (:name js3-mode
                :type git
                :url "https://github.com/thomblake/js3-mode.git")
-        ;; (:name my-mooz-js2-mode
-        ;;        :type git
-        ;;        :url "https://github.com/mbriggs/js2-mode.git")
-        (:name mustache-mode
-               :type http
-               :url "https://raw.github.com/mustache/emacs/master/mustache-mode.el")
         (:name shoulda-mode
                :type http
                :url "https://raw.github.com/mbriggs/shoulda-mode/master/shoulda-mode.el")
@@ -178,7 +172,6 @@
          js3-mode
          ;; my-mooz-js2-mode
          midje-mode
-         mustache-mode
          nxhtml
          pretty-mode
          rails-test-toggler
