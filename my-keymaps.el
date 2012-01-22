@@ -31,6 +31,11 @@
 
 (global-set-key "\C-f" 'command-t)
 
+(add-hook 'ido-minibuffer-setup-hook
+          (lambda ()
+            (define-key ido-completion-map "\C-n" 'ido-next-match)
+            (define-key ido-completion-map "\C-p" 'ido-prev-match)))
+
 (add-hook 'ruby-mode-hook
           (lambda ()
             (local-set-key (kbd "RET") 'newline-and-indent)
