@@ -6,7 +6,6 @@
 (require 'init-pre-package-variables)
 (require 'init-packages)
 (require 'init-autopair)
-(require 'init-ansi-color)
 (require 'init-rhtml)
 (require 'init-crontab)
 (require 'init-css)
@@ -42,6 +41,7 @@
 (require 'init-prolog)
 
 (require 'my-defuns)
+(require 'init-ansi-color)
 (require 'my-keymaps)
 (require 'my-emacs-settings)
 

@@ -22,11 +22,7 @@
 (global-set-key (kbd "C-;") 'forward-paragraph)
 (global-set-key (kbd "C-'") 'forward-word)
 
-(global-set-key (kbd "M-d") 'delete-char)
-(global-set-key (kbd "\C-d") 'kill-word)
-
-(global-set-key (kbd "M-b") 'backward-delete-char-untabify)
-(global-set-key (kbd "\C-b") 'backward-kill-word)
+(global-set-key (kbd "C-b") 'backward-delete-char-untabify)
 
 ;; from effective emacs: http://sites.google.com/site/steveyegge2/effective-emacs
 (global-set-key "\C-x\C-m" 'smex)
