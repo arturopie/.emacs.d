@@ -13,12 +13,11 @@
 (define-project-type clojure (generic)
   (look-for "project.clj"))
 
-defun packman-eproject (name)
+(defun packman-eproject (name)
   (define-project-attribute `(,name . :project-name)
      '(:use-shoulda t :packman t)))
 (mapc 'packman-eproject
-      '(
-        "dev"
+      '("dev"
         "rel"
         "release"
         "packmanager"
