@@ -39,6 +39,7 @@
 (require 'init-lua)
 (require 'init-git-blame)
 (require 'init-jump-char)
+(require 'init-prolog)
 
 (require 'my-defuns)
 (require 'my-keymaps)

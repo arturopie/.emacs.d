@@ -174,6 +174,7 @@
          midje-mode
          nxhtml
          pretty-mode
+         prolog-el
          rails-test-toggler
          rhtml
          shoulda-mode
