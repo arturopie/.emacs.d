@@ -8,6 +8,7 @@
 (setq fill-column 85)
 (setq initial-major-mode 'emacs-lisp-mode)
 (setq browse-url-generic-program "google-chrome")
+(setq initial-scratch-message nil)
 
 (require 'smex)
 (smex-initialize)
