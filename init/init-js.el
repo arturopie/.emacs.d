@@ -2,6 +2,7 @@
 (add-to-list 'auto-mode-alist '("\\.js$" . js3-mode))
 (add-to-list 'auto-mode-alist '("\\.js.erb$" . js3-mode))
 (add-to-list 'auto-mode-alist '("\\.coffee$" . coffee-mode))
+(add-to-list 'auto-mode-alist '("\\.json.erb$" . javascript-mode))
 
 (eval-after-load "coffee-mode"
   `(setq coffee-js-mode preferred-javascript-mode
