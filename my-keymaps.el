@@ -29,6 +29,7 @@
 
 ;; from effective emacs: http://sites.google.com/site/steveyegge2/effective-emacs
 (global-set-key "\C-x\C-m" 'smex)
+(global-set-key "\C-x\ m" 'smex)
 (global-set-key "\C-c\C-m" 'smex)
 (global-set-key "\C-w" 'backward-kill-word)
 (global-set-key "\C-x\C-k" 'kill-region)
