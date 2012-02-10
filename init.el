@@ -45,6 +45,7 @@
 (require 'init-ansi-color)
 (require 'my-keymaps)
 (require 'my-emacs-settings)
+(require 'my-shell-settings)
 
 (require 'hexcolors)
 
