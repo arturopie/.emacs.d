@@ -22,7 +22,7 @@
  '(protect-buffer-bury-p nil)
 )
 
-(setenv "PAGER" "cat")
+;; (setenv "PAGER" "cat")
 
 ;; truncate buffers continuously
 (add-hook 'comint-output-filter-functions 'comint-truncate-buffer)
