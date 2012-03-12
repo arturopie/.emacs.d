@@ -47,6 +47,7 @@
 (require 'my-shell-settings)
 
 (require 'hexcolors)
+(require 'mingle)
 
 (require 'server)
 (unless (server-running-p)
