@@ -21,7 +21,6 @@
 (require 'init-linum)
 (require 'init-rainbow-delims)
 (require 'init-ack)
-(require 'init-shoulda)
 (require 'init-textmate)
 (require 'init-rspec)
 (require 'init-autocomplete)
