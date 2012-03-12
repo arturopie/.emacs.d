@@ -26,7 +26,7 @@
 (tooltip-mode -1)
 
 (if (featurep 'ns)
-    (set-frame-font "Consolas Font"))
+    (set-frame-font "Inconsolata"))
 
 (require 'color-theme-railscasts)
 (color-theme-railscasts)
