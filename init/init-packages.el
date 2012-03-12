@@ -37,13 +37,14 @@
 
 (setq el-get-sources
       '((:name ansi-color :type emacswiki)
+        (:name joseph-file-util :type emacswiki :features joseph-file-util)
         (:name find-file-in-project
                :type http
                :url "https://raw.github.com/dburger/find-file-in-project/master/find-file-in-project.el"
                :features find-file-in-project)
         (:name expand-region
                :type git
-               :url "https://github.com/magnars/expand-region.el.git")
+               :url "https://github.com/mbriggs/expand-region.el.git")
         (:name pretty-mode
                :type http
                :url "https://raw.github.com/emacsmirror/pretty-mode/master/pretty-mode.el"
@@ -71,9 +72,10 @@
         (:name js3-mode
                :type git
                :url "https://github.com/thomblake/js3-mode.git")
-        (:name shoulda-mode
+        (:name shoulda-test
                :type http
-               :url "https://raw.github.com/mbriggs/shoulda-mode/master/shoulda-mode.el")
+               :url "https://raw.github.com/mbriggs/shoulda-test/master/shoulda-test.el"
+               :features shoulda-test)
         (:name solarized
                :type git
                :url "git@github.com:mbriggs/emacs-color-theme-solarized.git")
@@ -171,6 +173,7 @@
          eproject
          expand-region
          fuzzy-find-in-project
+         joseph-file-util
          magit
          js3-mode
          midje-mode
@@ -180,7 +183,7 @@
          prolog-el
          rails-test-toggler
          rhtml
-         shoulda-mode
+         shoulda-test
          solarized
          rspec-mode
          textile-mode
