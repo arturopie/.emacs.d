@@ -184,6 +184,7 @@
          solarized
          rspec-mode
          textile-mode
+         xml-parse
          color-theme-railscasts
          rvm
          jump-char)
