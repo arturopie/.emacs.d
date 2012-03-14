@@ -20,6 +20,7 @@
       '("dev"
         "rel"
         "release"
+        "wms"
         "packmanager"
         "production"))
 
