@@ -205,4 +205,16 @@
       (rtt/toggle-test-and-implementation)
       (rspec-toggle-spec-and-target)))
 
+(defun insert-pry ()
+  (interactive)
+  (move-beginning-of-line nil)
+  (insert "\n\n\n")
+  (insert "**************** REMOVE ME ********************")
+  (comment-or-uncomment-region-or-line)
+  (insert "\nrequire 'pry'\n")
+  (insert "binding.pry\n")
+  (insert "**************** REMOVE ME ********************")
+  (comment-or-uncomment-region-or-line)
+  (insert "\n\n\n"))
+
 (provide 'my-defuns)
