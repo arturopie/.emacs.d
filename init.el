@@ -39,6 +39,7 @@
 (require 'init-git-blame)
 (require 'init-jump-char)
 (require 'init-prolog)
+(require 'dumb-refactorings)
 
 (require 'my-defuns)
 (require 'init-ansi-color)
