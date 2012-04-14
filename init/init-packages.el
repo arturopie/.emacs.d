@@ -113,6 +113,7 @@
 (require-package 'css-mode)
 (require-package 'ruby-compilation)
 (require-package 'inf-ruby)
+(require-package 'ace-jump-mode)
 (require-package 'anything)
 (require-package 'anything-config)
 (require-package 'anything-match-plugin)
@@ -131,6 +132,7 @@
 (require-package 'flymake-haml)
 (require-package 'flymake-sass)
 (require-package 'flymake-shell)
+(require-package 'highlight-symbol)
 (require-package 'http-twiddle)
 (require-package 'json)
 (require-package 'js-comint)
@@ -189,8 +191,7 @@
          textile-mode
          xml-parse
          color-theme-railscasts
-         rvm
-         ace-jump-mode)
+         rvm)
        (mapcar 'el-get-source-name el-get-sources)))
 
 

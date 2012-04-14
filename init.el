@@ -38,6 +38,7 @@
 (require 'init-lua)
 (require 'init-git-blame)
 (require 'init-ace-jump-mode)
+(require 'init-highlight-symbol)
 (require 'init-prolog)
 (require 'dumb-refactorings)
 
