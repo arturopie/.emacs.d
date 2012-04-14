@@ -37,7 +37,7 @@
 (require 'init-js)
 (require 'init-lua)
 (require 'init-git-blame)
-(require 'init-jump-char)
+(require 'init-ace-jump-mode)
 (require 'init-prolog)
 (require 'dumb-refactorings)
 

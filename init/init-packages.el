@@ -190,7 +190,7 @@
          xml-parse
          color-theme-railscasts
          rvm
-         jump-char)
+         ace-jump-mode)
        (mapcar 'el-get-source-name el-get-sources)))
 
 
