@@ -107,7 +107,10 @@
                :url "https://github.com/olegshaldybin/color-theme-railscasts.git")
         (:name jump-char
                :type git
-               :url "https://github.com/lewang/jump-char.git")))
+               :url "https://github.com/lewang/jump-char.git")
+        (:name ruby-tools
+               :type git
+               :url "https://github.com/rejeep/ruby-tools.git")))
 
 ;;; get what we can from elpa
 (require-package 'css-mode)
@@ -191,6 +194,7 @@
          textile-mode
          xml-parse
          color-theme-railscasts
+         ruby-tools
          rvm)
        (mapcar 'el-get-source-name el-get-sources)))
 
