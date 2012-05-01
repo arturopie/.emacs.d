@@ -40,6 +40,7 @@
 (require 'init-ace-jump-mode)
 (require 'init-highlight-symbol)
 (require 'init-prolog)
+(require 'init-shell-script-mode)
 ;; (require 'init-ruby-tools)
 (require 'dumb-refactorings)
 
