@@ -43,6 +43,7 @@
 (require 'init-shell-script-mode)
 ;; (require 'init-ruby-tools)
 (require 'dumb-refactorings)
+(require 'init-c-c++-modes)
 
 (require 'my-defuns)
 (require 'init-ansi-color)
