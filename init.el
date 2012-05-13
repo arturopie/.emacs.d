@@ -23,7 +23,7 @@
 (require 'init-ack)
 (require 'init-textmate)
 (require 'init-rspec)
-(require 'init-autocomplete)
+;; (require 'init-autocomplete) ;; Too slow for my C++ projects
 (require 'init-anything)
 (require 'init-ruby)
 (require 'init-sass)

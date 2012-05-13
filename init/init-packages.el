@@ -166,7 +166,7 @@
        '(autopair
          ansi-color
          ack-and-a-half
-         auto-complete
+         ;; auto-complete
          auto-complete-css
          auto-complete-ruby
          ac-slime
