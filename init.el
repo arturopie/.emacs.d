@@ -44,6 +44,7 @@
 ;; (require 'init-ruby-tools)
 (require 'dumb-refactorings)
 (require 'init-c-c++-modes)
+(require 'init-java-mode)
 
 (require 'my-defuns)
 (require 'init-ansi-color)

@@ -10,7 +10,8 @@
   (lambda()
     (local-set-key  (kbd "C-c o") 'ff-find-other-file)
     (local-set-key  (kbd "C-c c") 'compile)
-    (local-set-key  (kbd "C-c r") 'recompile)))
+    (local-set-key  (kbd "C-c r") 'recompile)
+    (subword-mode 1)))
 
 (add-hook 'makefile-mode
   (lambda()

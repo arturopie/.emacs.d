@@ -40,4 +40,6 @@
 
 (add-hook 'ruby-mode-hook (lambda () (local-set-key [f6] 'recompile)))
 
+(add-hook 'ruby-mode-hook (lambda () (subword-mode 1)))
+
 (provide 'init-ruby)
