@@ -3,6 +3,8 @@
 (global-set-key (kbd "C-.") 'er/expand-region)
 (global-set-key (kbd "C->") 'er/contract-region)
 
+(global-set-key (kbd "C-c l") 'goto-last-change)
+
 (global-set-key (kbd "RET") 'newline-and-indent)
 (global-set-key (kbd "M-]") 'textmate-shift-right)
 (global-set-key (kbd "M-[") 'textmate-shift-left)

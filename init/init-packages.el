@@ -159,6 +159,7 @@
 (require-package 'smex)
 (require-package 'yari)
 (require-package 'yaml-mode)
+(require-package 'goto-last-change)
 
 ;;; el-get the rest
 (setq my-packages
