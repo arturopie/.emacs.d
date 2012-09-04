@@ -21,9 +21,9 @@
 (unless package-archive-contents
   (package-refresh-contents))
 
-(when (< emacs-major-version 24)
-  (require-package 'color-theme))
-
+;(when (< emacs-major-version 24)
+;  (require-package 'color-theme))
+(require-package 'color-theme)
 
 ;;; el-get
 (add-to-list 'load-path "~/.emacs.d/el-get/el-get")
@@ -45,10 +45,10 @@
         (:name expand-region
                :type git
                :url "https://github.com/mbriggs/expand-region.el.git")
-        (:name pretty-mode
-               :type http
-               :url "https://raw.github.com/emacsmirror/pretty-mode/master/pretty-mode.el"
-               :features pretty-mode)
+;        (:name pretty-mode
+;               :type http
+;               :url "https://raw.github.com/emacsmirror/pretty-mode/master/pretty-mode.el"
+;               :features pretty-mode)
         (:name eproject
                :type git
                :url "https://github.com/jrockway/eproject")
@@ -68,7 +68,7 @@
                :url "http://github.com/djwhitt/rvm.el.git"
                :load "rvm.el"
                :compile ("rvm.el")
-               :after (lambda() (rvm-use-default)))
+               :after (progn() (rvm-use-default)))
         (:name js3-mode
                :type git
                :url "https://github.com/thomblake/js3-mode.git")
@@ -167,9 +167,9 @@
        '(autopair
          ansi-color
          ack-and-a-half
-         ;; auto-complete
+         auto-complete
          auto-complete-css
-         auto-complete-ruby
+         ;; auto-complete-ruby
          ac-slime
          ac-dabbrev
          cycle-buffer
@@ -185,7 +185,7 @@
          midje-mode
          haml-mode
          nxhtml
-         pretty-mode
+;         pretty-mode
          prolog-el
          rails-test-toggler
          rhtml
@@ -194,7 +194,7 @@
          rspec-mode
          textile-mode
          xml-parse
-         color-theme-railscasts
+;         color-theme-railscasts
          ruby-tools
          rvm)
        (mapcar 'el-get-source-name el-get-sources)))
