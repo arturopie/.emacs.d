@@ -110,7 +110,14 @@
                :url "https://github.com/lewang/jump-char.git")
         (:name ruby-tools
                :type git
-               :url "https://github.com/rejeep/ruby-tools.git")))
+               :url "https://github.com/rejeep/ruby-tools.git")
+        (:name multiple-cursors
+               :type git
+               :url "https://github.com/magnars/multiple-cursors.el"
+               :features multiple-cursors)
+        (:name guru-mode
+               :type git
+               :url "https://github.com/bbatsov/guru-mode.git")))
 
 ;;; get what we can from elpa
 (require-package 'css-mode)
@@ -196,7 +203,8 @@
          xml-parse
          color-theme-railscasts
          ruby-tools
-         rvm)
+         rvm
+         guru-mode)
        (mapcar 'el-get-source-name el-get-sources)))
 
 

@@ -45,6 +45,7 @@
 (require 'dumb-refactorings)
 (require 'init-c-c++-modes)
 (require 'init-java-mode)
+(require 'guru-mode)
 
 (require 'my-defuns)
 (require 'init-ansi-color)
