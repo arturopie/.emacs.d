@@ -13,6 +13,11 @@
 
 (global-set-key (kbd "C-;") 'comment-dwim)
 
+;; from http://emacsrocks.com/e12.html
+(global-set-key (kbd "C-c DEL") 'sgml-delete-tag)
+(global-set-key (kbd "C-c C-e") 'sgml-close-tag)
+(global-set-key (kbd "C-c C-j") 'zencoding-expand-line)
+
 ;; from effective emacs: http://sites.google.com/site/steveyegge2/effective-emacs
 (global-set-key "\C-x\C-m" 'smex)
 (global-set-key "\C-x\ m" 'smex)
