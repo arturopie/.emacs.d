@@ -15,6 +15,7 @@
 (require 'init-haml)
 (require 'init-ido)
 (require 'init-expand-region)
+(require 'init-multiple-cursors)
 (require 'init-maxframe)
 (require 'init-org)
 (require 'init-rinari)

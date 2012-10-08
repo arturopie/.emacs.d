@@ -20,7 +20,7 @@
                     " ")))
     (message "escreen: active screens: %s" emphased)))
 
-(global-set-key (kbd "C-,") 'escreen-get-active-screen-numbers-with-emphasis)
+; (global-set-key (kbd "C-,") 'escreen-get-active-screen-numbers-with-emphasis);
 
 (defun dim:escreen-goto-prev-screen (&optional n)
   (interactive "p")
