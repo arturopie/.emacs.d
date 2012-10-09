@@ -21,9 +21,8 @@
 (unless package-archive-contents
   (package-refresh-contents))
 
-;(when (< emacs-major-version 24)
-;  (require-package 'color-theme))
-(require-package 'color-theme)
+(when (< emacs-major-version 24)
+ (require-package 'color-theme))
 
 ;;; el-get
 (add-to-list 'load-path "~/.emacs.d/el-get/el-get")

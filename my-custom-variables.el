@@ -30,6 +30,7 @@
  '(js3-global-externs my-global-externs)
  '(mumamo-chunk-coloring 1)
  '(protect-buffer-bury-p nil)
+ '(safe-local-variable-values (quote ((encoding . utf-8) (ruby-compilation-executable . "ruby") (ruby-compilation-executable . "ruby1.8") (ruby-compilation-executable . "ruby1.9") (ruby-compilation-executable . "rbx") (ruby-compilation-executable . "jruby"))))
  '(tramp-default-method "ssh"))
 
 (custom-set-faces
