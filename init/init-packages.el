@@ -98,10 +98,10 @@
         (:name ack-and-a-half
                :type git
                :url "https://github.com/jhelwig/ack-and-a-half.git")
-        (:name rhtml
+        (:name web-mode
                :type git
-               :url "git@github.com:mbriggs/rhtml.git"
-               :features rhtml-mode)
+               :url "https://github.com/fxbois/web-mode"
+               :features web-mode)
         (:name color-theme-railscasts
                :type git
                :url "https://github.com/olegshaldybin/color-theme-railscasts.git")
@@ -195,7 +195,7 @@
          pretty-mode
          prolog-el
          rails-test-toggler
-         rhtml
+         web-mode
          shoulda-test
          solarized
          rspec-mode

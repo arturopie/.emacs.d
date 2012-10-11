@@ -6,7 +6,7 @@
 (require 'init-pre-package-variables)
 (require 'init-packages)
 (require 'init-autopair)
-(require 'init-rhtml)
+(require 'init-web-mode)
 (require 'init-crontab)
 (require 'init-css)
 (require 'init-csv)

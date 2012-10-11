@@ -3,12 +3,21 @@
                             "afterEach" "setFixtures" "require" "Handlebars"))
 
 (custom-set-variables
-  ;; custom-set-variables was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
  '(ac-modes (quote (emacs-lisp-mode lisp-interaction-mode c-mode cc-mode c++-mode java-mode perl-mode cperl-mode python-mode ruby-mode ecmascript-mode javascript-mode js2-mode js3-mode php-mode css-mode sass-mode scss-mode nxml-mode makefile-mode sh-mode fortran-mode f90-mode ada-mode xml-mode sgml-mode)))
- '(js3-global-externs my-global-externs)
+ '(comint-buffer-maximum-size 20000)
+ '(comint-completion-addsuffix t)
+ '(comint-completion-autolist t)
+ '(comint-get-old-input (lambda nil "") t)
+ '(comint-input-ignoredups t)
+ '(comint-input-ring-size 5000)
+ '(comint-move-point-for-output nil)
+ '(comint-prompt-read-only nil)
+ '(comint-scroll-show-maximum-output t)
+ '(comint-scroll-to-bottom-on-input t)
  '(js2-always-indent-assigned-expr-in-decls-p t)
  '(js2-auto-indent-p t)
  '(js2-basic-offset 2)
@@ -18,13 +27,16 @@
  '(js2-indent-on-enter-key t)
  '(js2-mirror-mode nil)
  '(js2-strict-missing-semi-warning nil)
- '(mumamo-chunk-coloring 1))
+ '(js3-global-externs my-global-externs)
+ '(mumamo-chunk-coloring 1)
+ '(protect-buffer-bury-p nil)
+ '(tramp-default-method "ssh"))
 
 (custom-set-faces
-  ;; custom-set-faces was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
  '(anything-header ((((class color)) (:background "#81908F" :foreground "#fcf4dc"))))
  '(clojure-test-error-face ((((class color) (background light)) (:underline "#a57705"))))
  '(clojure-test-failure-face ((((class color) (background light)) (:underline "#c60007"))))
@@ -55,4 +67,9 @@
  '(rainbow-delimiters-depth-7-face ((((class color)) (:foreground "#259185"))))
  '(rainbow-delimiters-depth-8-face ((((class color)) (:foreground "#728a05"))))
  '(rainbow-delimiters-depth-9-face ((((class color)) (:foreground "#042028"))))
- '(trailing-whitespace ((t (:background "#c7c0a9" :foreground "#e9e2cb" :inverse-video t)))))
+ '(trailing-whitespace ((t (:background "#c7c0a9" :foreground "#e9e2cb" :inverse-video t))))
+ '(web-mode-css-prop-face ((t (:foreground "sky blue"))))
+ '(web-mode-css-pseudo-class-face ((t (:foreground "dark goldenrod"))))
+ '(web-mode-css-rule-face ((t (:foreground "gold"))))
+ '(web-mode-html-attr-name-face ((t (:foreground "light sky blue"))))
+ '(web-mode-html-tag-face ((t (:foreground "gold2")))))
