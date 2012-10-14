@@ -108,6 +108,10 @@
         (:name jump-char
                :type git
                :url "https://github.com/lewang/jump-char.git")
+        (:name iedit-mode
+               :type http
+               :url "https://raw.github.com/eproxus/emacs-iedit/master/iedit.el"
+               :features iedit)
         (:name ruby-tools
                :type git
                :url "https://github.com/rejeep/ruby-tools.git")
@@ -204,7 +208,8 @@
          color-theme-railscasts
          ruby-tools
          rvm
-         guru-mode)
+         guru-mode
+         iedit-mode)
        (mapcar 'el-get-source-name el-get-sources)))
 
 
