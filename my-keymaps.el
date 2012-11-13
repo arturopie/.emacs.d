@@ -1,3 +1,5 @@
+(global-set-key (kbd "C-c C-c") 'send-current-line-to-next-window)
+
 (global-set-key (kbd "C-c s") 'magit-status)
 
 (global-set-key (kbd "C-.") 'er/expand-region)
