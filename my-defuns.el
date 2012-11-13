@@ -27,14 +27,6 @@
     (with-current-buffer target
       (insert current-line))))
 
-(defun new-line-in-normal-mode ()
-  "make a new line without moving the cursor or leaving normal mode"
-  (interactive)
-  (evil-set-marker ?z)
-  (evil-insert-newline-below)
-  (evil-force-normal-state)
-  (evil-goto-mark ?z))
-
 (defvar rails/models-alist nil)
 (defun rails-model-files ()
   (all-files-under-dir-recursively (concat (eproject-root) "app/models") ".rb$"))
@@ -232,5 +224,15 @@ BEG and END (region to sort)."
                (format "^%s" (regexp-quote (car kill-ring))) nil t)
             (replace-match "" nil nil))
           (goto-char next-line))))))
+
+(defun copy-file-name-to-clipboard ()
+  "Copy the current buffer file name to the clipboard."
+  (interactive)
+  (let ((filename (if (equal major-mode 'dired-mode)
+                      default-directory
+                    (buffer-file-name))))
+    (when filename
+      (kill-new filename)
+      (message "Copied buffer file name '%s' to the clipboard." filename))))
 
 (provide 'my-defuns)
