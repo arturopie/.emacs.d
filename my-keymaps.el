@@ -3,6 +3,14 @@
 (global-set-key (kbd "C-.") 'er/expand-region)
 (global-set-key (kbd "C-M-.") 'er/contract-region)
 
+;; iedit
+(global-set-key (kbd "C-,") 'iedit-dwim)
+(global-set-key (kbd "C-<") 'iedit-mode)
+
+;; multiple-cursors
+(global-set-key (kbd "C->") 'mc/mark-next-like-this)
+(global-set-key (kbd "C-'") 'mc/edit-lines)
+
 (global-set-key (kbd "C-c l") 'goto-last-change)
 
 (global-set-key (kbd "RET") 'newline-and-indent)

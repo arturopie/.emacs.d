@@ -21,9 +21,8 @@
 (unless package-archive-contents
   (package-refresh-contents))
 
-;(when (< emacs-major-version 24)
-;  (require-package 'color-theme))
-(require-package 'color-theme)
+(when (< emacs-major-version 24)
+ (require-package 'color-theme))
 
 ;;; el-get
 (add-to-list 'load-path "~/.emacs.d/el-get/el-get")
@@ -98,16 +97,20 @@
         (:name ack-and-a-half
                :type git
                :url "https://github.com/jhelwig/ack-and-a-half.git")
-        (:name rhtml
+        (:name web-mode
                :type git
-               :url "git@github.com:mbriggs/rhtml.git"
-               :features rhtml-mode)
+               :url "https://github.com/fxbois/web-mode"
+               :features web-mode)
         (:name color-theme-railscasts
                :type git
                :url "https://github.com/olegshaldybin/color-theme-railscasts.git")
         (:name jump-char
                :type git
                :url "https://github.com/lewang/jump-char.git")
+        (:name iedit-mode
+               :type http
+               :url "https://raw.github.com/eproxus/emacs-iedit/master/iedit.el"
+               :features iedit)
         (:name ruby-tools
                :type git
                :url "https://github.com/rejeep/ruby-tools.git")
@@ -195,7 +198,7 @@
 ;         pretty-mode
          prolog-el
          rails-test-toggler
-         rhtml
+         web-mode
          shoulda-test
          solarized
          rspec-mode
@@ -204,7 +207,8 @@
 ;         color-theme-railscasts
          ruby-tools
          rvm
-         guru-mode)
+         guru-mode
+         iedit-mode)
        (mapcar 'el-get-source-name el-get-sources)))
 
 
