@@ -34,7 +34,7 @@
 (global-set-key "\C-x\C-k" 'kill-region)
 (global-set-key "\C-c\C-k" 'kill-region)
 
-(global-set-key "\C-c\ f" 'command-t)
+(global-set-key "\C-c\ o" 'command-t)
 
 (add-hook 'ido-minibuffer-setup-hook
           (lambda ()
