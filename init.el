@@ -45,6 +45,7 @@
 (require 'dumb-refactorings)
 (require 'init-c-c++-modes)
 (require 'init-java-mode)
+(require 'init-magit)
 (require 'guru-mode)
 
 (require 'my-defuns)
