@@ -1,3 +1,5 @@
+(global-set-key (kbd "C-c p") 'recompile)
+
 (global-set-key (kbd "C-c s") 'magit-status)
 
 (global-set-key (kbd "C-.") 'er/expand-region)
