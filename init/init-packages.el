@@ -77,10 +77,10 @@
                :features shoulda-test)
         (:name solarized
                :type git
-               :url "git@github.com:mbriggs/emacs-color-theme-solarized.git")
+               :url "https://github.com/sellout/emacs-color-theme-solarized.git")
         (:name rspec-mode
                :type git
-               :url "git@github.com:mbriggs/rspec-mode.git")
+               :url "https://github.com/mbriggs/rspec-mode.git")
         (:name rails-test-toggler
                :type http
                :url "https://raw.github.com/mbriggs/rails-test-toggler/master/rails-test-toggler.el"
