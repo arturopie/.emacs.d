@@ -46,6 +46,7 @@
 (require 'init-c-c++-modes)
 (require 'init-java-mode)
 (require 'init-magit)
+(require 'init-haskell)
 (require 'guru-mode)
 
 (require 'my-defuns)

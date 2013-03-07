@@ -207,6 +207,7 @@
 ;         color-theme-railscasts
          ruby-tools
          rvm
+         haskell-mode
          guru-mode
          iedit-mode)
        (mapcar 'el-get-source-name el-get-sources)))
