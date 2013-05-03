@@ -47,6 +47,7 @@
 (require 'init-java-mode)
 (require 'init-magit)
 (require 'init-haskell)
+(require 'init-erlang)
 (require 'guru-mode)
 
 (require 'my-defuns)

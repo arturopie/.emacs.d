@@ -114,6 +114,11 @@
         (:name ruby-tools
                :type git
                :url "https://github.com/rejeep/ruby-tools.git")
+        (:name auto-complete-ruby
+               :description "Auto-complete sources for Ruby"
+               :type http
+               :url "http://www.cx4a.org/pub/auto-complete-ruby.el"
+               :depends (auto-complete))
         (:name multiple-cursors
                :type git
                :url "https://github.com/magnars/multiple-cursors.el"
