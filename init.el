@@ -39,12 +39,12 @@
 (require 'init-git-blame)
 (require 'init-ace-jump-mode)
 (require 'init-highlight-symbol)
-(require 'init-prolog)
 (require 'init-shell-script-mode)
 ;; (require 'init-ruby-tools)
 (require 'dumb-refactorings)
 (require 'init-c-c++-modes)
 (require 'init-java-mode)
+(require 'init-magit)
 (require 'guru-mode)
 
 (require 'my-defuns)

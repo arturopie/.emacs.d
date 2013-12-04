@@ -21,9 +21,7 @@
 (unless package-archive-contents
   (package-refresh-contents))
 
-(when (< emacs-major-version 24)
-  (require-package 'color-theme))
-
+(require-package 'color-theme)
 
 ;;; el-get
 (add-to-list 'load-path "~/.emacs.d/el-get/el-get")
@@ -44,7 +42,7 @@
                :features find-file-in-project)
         (:name expand-region
                :type git
-               :url "https://github.com/mbriggs/expand-region.el.git")
+               :url "https://github.com/magnars/expand-region.el.git")
         (:name pretty-mode
                :type http
                :url "https://raw.github.com/emacsmirror/pretty-mode/master/pretty-mode.el"
@@ -68,7 +66,7 @@
                :url "http://github.com/djwhitt/rvm.el.git"
                :load "rvm.el"
                :compile ("rvm.el")
-               :after (lambda() (rvm-use-default)))
+               :after (progn (rvm-use-default)))
         (:name js3-mode
                :type git
                :url "https://github.com/thomblake/js3-mode.git")
@@ -151,6 +149,7 @@
 (require-package 'json)
 (require-package 'js-comint)
 (require-package 'linum-off)
+(require-package 'magit)
 (require-package 'markdown-mode)
 (require-package 'maxframe)
 (require-package 'move-text)
@@ -178,9 +177,7 @@
        '(autopair
          ansi-color
          ack-and-a-half
-         ;; auto-complete
          auto-complete-css
-         auto-complete-ruby
          ac-slime
          ac-dabbrev
          cycle-buffer
@@ -191,13 +188,11 @@
          expand-region
          fuzzy-find-in-project
          joseph-file-util
-         magit
          js3-mode
          midje-mode
          haml-mode
          nxhtml
          pretty-mode
-         prolog-el
          rails-test-toggler
          web-mode
          shoulda-test
