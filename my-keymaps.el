@@ -5,6 +5,9 @@
 (global-set-key (kbd "C-.") 'er/expand-region)
 (global-set-key (kbd "C-M-.") 'er/contract-region)
 
+(global-set-key (kbd "s-c") 'kill-ring-save)
+(global-set-key (kbd "s-v") 'yank)
+
 ;; iedit
 (global-set-key (kbd "C-,") 'iedit-dwim)
 (global-set-key (kbd "C-<") 'iedit-mode)
@@ -19,7 +22,7 @@
 (global-set-key (kbd "M-]") 'textmate-shift-right)
 (global-set-key (kbd "M-[") 'textmate-shift-left)
 (global-set-key (kbd "M-j") 'other-window)
-(global-set-key (kbd "M-.") 'etags-select-find-tag)
+(global-set-key (kbd "s-b") 'etags-select-find-tag)
 
 (global-set-key (kbd "C-;") 'comment-dwim)
 
