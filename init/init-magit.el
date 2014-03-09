@@ -16,4 +16,6 @@
 ;(setq display-buffer-function 'display-buffer-same-window)
 (defun magit-use-emacsclient-p ())
 
+(global-set-key (kbd "C-c s") 'magit-status)
+
 (provide 'init-magit)
