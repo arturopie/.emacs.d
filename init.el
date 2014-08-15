@@ -22,7 +22,6 @@
 (require 'init-rainbow-delims)
 (require 'init-ack)
 (require 'init-textmate)
-(require 'init-rspec)
 ;; (require 'init-autocomplete) ;; Too slow for my C++ projects
 (require 'init-anything)
 (require 'init-ruby)

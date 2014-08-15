@@ -61,12 +61,6 @@
                :type git
                :url "https://github.com/justinweiss/fuzzy-find-in-project"
                :features fuzzy-find-in-project)
-        (:name rvm
-               :type git
-               :url "http://github.com/djwhitt/rvm.el.git"
-               :load "rvm.el"
-               :compile ("rvm.el")
-               :after (progn (rvm-use-default)))
         (:name js3-mode
                :type git
                :url "https://github.com/thomblake/js3-mode.git")
@@ -77,9 +71,6 @@
         (:name solarized
                :type git
                :url "git@github.com:mbriggs/emacs-color-theme-solarized.git")
-        (:name rspec-mode
-               :type git
-               :url "git@github.com:mbriggs/rspec-mode.git")
         (:name rails-test-toggler
                :type http
                :url "https://raw.github.com/mbriggs/rails-test-toggler/master/rails-test-toggler.el"
@@ -158,7 +149,6 @@
 (require-package 'mode-compile)
 (require-package 'org)
 (require-package 'paredit)
-(require-package 'rinari)
 (require-package 'ruby-end)
 (require-package 'ruby-block)
 (require-package 'rainbow-delimiters)
@@ -178,7 +168,6 @@
          ansi-color
          ack-and-a-half
          auto-complete-css
-         ac-slime
          ac-dabbrev
          cycle-buffer
          dired-plus
@@ -197,12 +186,10 @@
          web-mode
          shoulda-test
          solarized
-         rspec-mode
          textile-mode
          xml-parse
          color-theme-railscasts
          ruby-tools
-         rvm
          guru-mode
          iedit-mode)
        (mapcar 'el-get-source-name el-get-sources)))
