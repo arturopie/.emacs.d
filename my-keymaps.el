@@ -1,27 +1,30 @@
 ;; to math RubyMine Mac OSX10.5+
-(global-set-key (kbd "s-c") 'kill-ring-save)
-(global-set-key (kbd "s-v") 'yank)
-(global-set-key (kbd "s-x") 'kill-region)
+(global-set-key (kbd "M-c") 'kill-ring-save)
+(global-set-key (kbd "M-v") 'yank)
+(global-set-key (kbd "M-x") 'kill-region)
+(global-set-key (kbd "M-A") 'smex)
 
-(global-set-key (kbd "s-z") 'undo)
-(global-set-key (kbd "s-f") 'isearch-forward)
-(global-set-key (kbd "s-r") 'query-replace)
-(global-set-key (kbd "s-w") 'ido-kill-buffer)
-(global-set-key (kbd "s-e") 'ido-switch-buffer)
-(global-set-key (kbd "s-a") 'mark-whole-buffer)
-(global-set-key (kbd "s-d") "\C-a\C- \C-n\M-w\C-y") ; Duplicate line
-(global-set-key (kbd "s-l") 'goto-line)
-(global-set-key (kbd "s-b") 'find-tag)
+(global-set-key (kbd "M-z") 'undo)
+(global-set-key (kbd "M-f") 'isearch-forward)
+(global-set-key (kbd "M-r") 'query-replace)
+(global-set-key (kbd "M-w") 'ido-kill-buffer)
+(global-set-key (kbd "M-e") 'ido-switch-buffer)
+(global-set-key (kbd "M-a") 'mark-whole-buffer)
+(global-set-key (kbd "M-d") "\C-a\C- \C-n\M-w\C-y") ; Duplicate line
+(global-set-key (kbd "M-l") 'goto-line)
+(global-set-key (kbd "M-b") 'find-tag)
+(global-set-key (kbd "M-s") 'save-buffer)
 
 (define-key input-decode-map "\e\eOA" [(meta up)])
 (define-key input-decode-map "\e\eOB" [(meta down)])
+
 (global-set-key [(meta up)] 'er/expand-region)
 (global-set-key [(meta down)] 'er/contract-region)
 
-(global-set-key (kbd "s-}") 'next-buffer)
-(global-set-key (kbd "s-{") 'switch-to-prev-buffer)
+(global-set-key (kbd "M-}") 'next-buffer)
+(global-set-key (kbd "M-{") 'switch-to-prev-buffer)
 
-(global-set-key (kbd "s-/") 'comment-dwim)
+(global-set-key (kbd "M-/") 'comment-dwim)
 
 
 (global-set-key (kbd "C-c p") 'recompile)
@@ -30,8 +33,8 @@
 (global-set-key (kbd "C-,") 'iedit-dwim)
 (global-set-key (kbd "C-<") 'iedit-mode)
 
-;; multiple-cursors
-(global-set-key (kbd "C->") 'mc/mark-next-like-this)
+;; multiple-cursor-s
+(global-set-key (kbd "C-G") 'mc/mark-next-like-this)
 (global-set-key (kbd "C-'") 'mc/edit-lines)
 
 (global-set-key (kbd "C-c l") 'goto-last-change)
@@ -40,7 +43,7 @@
 (global-set-key (kbd "M-]") 'textmate-shift-right)
 (global-set-key (kbd "M-[") 'textmate-shift-left)
 (global-set-key (kbd "M-j") 'other-window)
-(global-set-key (kbd "s-b") 'etags-select-find-tag)
+(global-set-key (kbd "M-b") 'etagM-select-find-tag)
 
 ;; from http://emacsrocks.com/e12.html
 (global-set-key (kbd "C-c DEL") 'sgml-delete-tag)
@@ -55,7 +58,7 @@
 (global-set-key "\C-x\C-k" 'kill-region)
 (global-set-key "\C-c\C-k" 'kill-region)
 
-(global-set-key "\C-c\ o" 'command-t)
+(global-set-key (kbd "M-O") 'command-t)
 
 (add-hook 'ido-minibuffer-setup-hook
           (lambda ()
