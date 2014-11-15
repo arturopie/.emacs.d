@@ -45,6 +45,7 @@
 (require 'init-java-mode)
 (require 'init-magit)
 (require 'guru-mode)
+(require 'elixir-mode)
 
 (require 'my-defuns)
 (require 'init-ansi-color)
