@@ -160,8 +160,6 @@
 (require-package 'yari)
 (require-package 'yaml-mode)
 (require-package 'goto-last-change)
-(require-package 'elixir-mode)
-
 
 ;;; el-get the rest
 (setq my-packages
