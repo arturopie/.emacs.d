@@ -1,7 +1,6 @@
 ;; -*- coding: utf-8 -*-
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/init"))
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/elisp"))
-(add-to-list 'load-path (expand-file-name "~/.emacs.d"))
 
 (require 'init-pre-package-variables)
 (require 'init-packages)
