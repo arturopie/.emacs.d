@@ -4,9 +4,10 @@
 (global-set-key (kbd "M-x") 'kill-region)
 (global-set-key (kbd "M-A") 'smex)
 
-(global-set-key (kbd "M-z") 'undo)
 (global-set-key (kbd "M-f") 'isearch-forward)
-(global-set-key (kbd "M-f") 'isearch-repeat-forward)
+(define-key isearch-mode-map "\M-f" 'isearch-repeat-forward)
+
+(global-set-key (kbd "M-z") 'undo)
 (global-set-key (kbd "M-r") 'query-replace)
 (global-set-key (kbd "M-w") 'ido-kill-buffer)
 (global-set-key (kbd "M-e") 'ido-switch-buffer)
