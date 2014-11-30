@@ -34,7 +34,7 @@
 (global-set-key (kbd "C-<") 'iedit-mode)
 
 ;; multiple-cursor-s
-(global-set-key (kbd "C-G") 'mc/mark-next-like-this)
+(global-set-key (kbd "C-M-G") 'mc/mark-next-like-this)
 (global-set-key (kbd "C-'") 'mc/edit-lines)
 
 (global-set-key (kbd "C-c l") 'goto-last-change)
