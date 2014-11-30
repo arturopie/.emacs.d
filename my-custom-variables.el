@@ -7,7 +7,6 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(ac-modes (quote (emacs-lisp-mode lisp-interaction-mode c-mode cc-mode c++-mode java-mode perl-mode cperl-mode python-mode ruby-mode ecmascript-mode javascript-mode js2-mode js3-mode php-mode css-mode sass-mode scss-mode nxml-mode makefile-mode sh-mode fortran-mode f90-mode ada-mode xml-mode sgml-mode)))
  '(comint-buffer-maximum-size 20000)
  '(comint-completion-addsuffix t)
  '(comint-completion-autolist t)

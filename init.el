@@ -21,7 +21,7 @@
 (require 'init-rainbow-delims)
 (require 'init-ack)
 (require 'init-textmate)
-;; (require 'init-autocomplete) ;; Too slow for my C++ projects
+(require 'init-autocomplete)
 (require 'init-anything)
 (require 'init-ruby)
 (require 'init-sass)
@@ -63,3 +63,4 @@
 (load custom-file)
 
 (maybe-maximize-frame)
+

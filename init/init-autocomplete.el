@@ -1,7 +1,9 @@
 (require 'ac-dabbrev)
+
 (substitute-key-definition 'ac-complete nil ac-completing-map)
 ;(ac-config-default)
 
+;; 
 (custom-set-variables '(ac-modes
                         '(emacs-lisp-mode
                           lisp-interaction-mode
@@ -28,7 +30,9 @@
                           f90-mode
                           ada-mode
                           xml-mode
-                          sgml-mode)))
+                          sgml-mode
+                          elixir-mode
+                          magit-log-edit-mode)))
 
 (global-auto-complete-mode t)
 (setq ac-dwim nil) ; To get pop-ups with docs even if a word is uniquely completed
@@ -41,8 +45,7 @@
                ac-source-words-in-same-mode-buffers
                ac-source-words-in-all-buffer))
 
-(define-key ac-completing-map (kbd "C-n") 'dabbrev-expand)
-(define-key ac-completing-map (kbd "C-p") 'dabbrev-expand)
+(define-key ac-completing-map (kbd "RET") 'ac-complete)
 
 ;; Exclude very large buffers from dabbrev
 (defun smp-dabbrev-friend-buffer (other-buffer)
