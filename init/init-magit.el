@@ -10,7 +10,7 @@
          (ticket-number (replace-regexp-in-string "[0-9]+\\(_.*\\)$" ""
                                                   current-branch nil nil 1)))
     (when (string-match "^[0-9]" current-branch)
-      (insert (concat "#" ticket-number ": ")))))
+      (insert (concat "#" ticket-number " - ")))))
 
 ; (defadvice magit-pop-to-log-edit (around magit-prevent-window-popup activate) (let ((pop-up-windows)) ad-do-it)) 
 ;(setq display-buffer-function 'display-buffer-same-window)
